@@ -1,0 +1,5 @@
+AuthName "Panel administratora"
+AuthType Basic
+AuthUserFile /home/stud/rutynar/WWW/cv/.htpasswd
+AuthGroupFile /dev/null
+require valid-user

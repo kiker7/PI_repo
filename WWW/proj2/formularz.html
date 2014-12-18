@@ -1,0 +1,82 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="pl">
+    <meta http-equiv="Reply-to" content="rutynar@ee.pw.edu.pl">
+    <meta name="Description" content="Formularz">
+    <meta name="Keywords" content="formularz , form, cv">
+    <meta name="Author" content="Rafał Rutyna">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script type="text/javascript" src="skrypt/script_form.js"></script>
+    <title>Formularz</title>
+    <script type="text/javascript" src="skrypt/CalendarPopup.js"></script>
+	  <script type="text/javascript">
+		  var cal1 = new CalendarPopup("kalendarz");
+		    cal1.showNavigationDropdowns();
+		    cal1.setCssPrefix("KAL");
+	  </script>
+  </head>
+  <body>
+    <DIV ID="kalendarz" STYLE="position:absolute;visibility:hidden;background-color:white;"></DIV>
+    <div class="top">
+      <h1 class="header">Formularz</h1>
+      <div class="formularz">
+        <h3 id="tekst">Podaj swoje dane osobowe:</h3>
+        <form class="forml" name="formul1" action="mailto:rafalrutyna00@gmail.com?subject=PI-formularz" method="post" onsubmit="return wyslij(this);">
+          <p>Imię*: <input type="text" name="imie" onblur = "upImie()" id= "fimie" onkeypress="return blockNumbers(event);"></p>
+          <p>Nazwisko*: <input type="text" name="nazwisko" onblur = "upNazw()" id = "fnazw" onkeypress="return blockNumbers(event);" ></p>
+          <p>Data urodzenia:<input type="text" id = "data" name="dataud" readonly onClick="cal1.select(document.forms['formul1'].dataud,'anchor1','dd-MM-yyyy'); return false;">
+          <A HREF="#" onClick="cal1.select(document.forms['formul1'].dataud,'anchor1','dd-MM-yyyy'); return false;"
+		   NAME="anchor1" ID="anchor1"><img src="../obrazki/cal.gif" alt="Kalendarz" ></A>
+          </p>
+          <p>PESEL*:<input type="text" name="pesel" id="ps" onblur="fpesell()" onkeypress="return blockLetters(event);"></p>
+          <p>Wiek:<input type="text" id="wiek" name="wiek" onkeypress="return blockLetters(event);"></p>
+          <p>Płec:<select name="plec">
+              <option value="M">Mezczyzna</option>
+              <option value="K">Kobieta</option>
+            </select></p>
+          <p>Wybierz kierunek studiów*:
+            <input type="radio" name="kierunek">Informatyka
+            <input type="radio" name="kierunek">Elektrotechnika
+            <input type="radio" name="kierunek">Automatyka i Robotyka
+          </p>
+          <p>Dodaj zdjęcie: <input type="file" name="plik" accept="image/jpeg,image/tiff,image/png" onchange = "plik()" id ="img"></p>
+          <p>Komentarz:</p>
+          <p><textarea id="comment" name="komentarz"  cols="30" rows="5" onkeyup = "licznik()"></textarea><input type = "text" disabled = "disabled" size = "3" name = "dl" id="commsize" > </p>
+          <p>Czy zgadzasz się na przetwarzanie Twoich danych osobowych?*<input type="checkbox" name="tn" id = "zgoda"></p>
+          <p><input type="submit" value = "Wyslij"><p><br>
+        </form>
+      </div>
+      <div class="valid">
+        <table>
+            <tr>
+                <td class= "link">
+                    <a href ="http://viewsource.in/http://volt.iem.pw.edu.pl/~rutynar/proj2/style/style.css">Kod źródłowy CSS</a>
+                </td>
+                <td class = "link">
+                    <a href ="http://viewsource.in/http://volt.iem.pw.edu.pl/~rutynar/proj2/formularz.html">Kod źródłowy HTML</a>
+                </td>
+                <td class = "link">
+                    <a href ="http://viewsource.in/http://volt.iem.pw.edu.pl/~rutynar/proj2/skrypt/script_form.js">Kod źródłowy JS</a>
+                </td>
+                <td>					
+						<a href="http://jigsaw.w3.org/css-validator/check/referer">
+						<img style="border:0;width:88px;height:31px"
+						src="http://jigsaw.w3.org/css-validator/images/vcss"
+						alt="Poprawny CSS!" >
+						</a>					    
+                </td>
+            </tr>
+            <tr>
+                <td></td><td></td><td></td>
+                <td>
+				<a href="http://validator.w3.org/check?uri=referer"><img
+				src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Strict" height="31" width="88"></a>
+                </td>
+            </tr>
+        </table>
+      </div>
+      <div id="PI">Programowanie Internetowe</div>
+    </div>
+  </body>

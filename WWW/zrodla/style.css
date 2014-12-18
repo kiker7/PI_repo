@@ -1,0 +1,71 @@
+html, body {
+
+	background-color: white;
+	color: black;
+	text-align: left;
+	font-family: Verdana;
+
+
+}
+a{
+  text-decoration: none;
+  color: black;	
+}
+
+.buttonsMenu {
+  float                      : left ;
+  height                     : 710px ;
+  width                      : 209px ;
+  background-color           : white;
+}
+
+
+.menu li {
+  list-style-type            : none;
+}
+
+.menu a{
+  text-decoration: none;
+  color: black;
+}
+
+.menu li ul {
+  overflow                   : hidden;
+  display                    : none;
+}
+
+.menu li:hover ul {
+  position                   : absolute;
+  display                    : block;
+  margin                     : 23px -40px 0 -40px;
+}
+
+.menu li:hover ul .button {
+   margin                    : 0 0 0 0 ;
+   height                    : 10px;
+   width                     : 250px;
+}
+
+.button {
+  margin                     : 5px 15px 5px 15px ;
+  width                      : 220px ;
+  height                     : 20px ;
+  padding                    : 20px 0 20px 0;
+
+  background-color           : #fcfacc ;
+  border                     : solid 1px #110f5c;
+  text-align                 : center;
+  transition                 : background-color 1s ease;
+  font-weight                : bold;
+}
+
+.button:hover {
+  background-color           : #fcfacc ;
+  margin                     : 0 -10px 0 5px ;
+}
+
+.valid {
+	text-align: center;
+	margin-top: 400px;
+}
+

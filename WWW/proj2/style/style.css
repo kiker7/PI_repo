@@ -1,0 +1,209 @@
+html, body {
+
+	background-color : white;
+	color            : black;
+	text-align       : left;
+	font-family      : Verdana;
+}
+
+#top{
+	width            :980px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+ }
+
+.valid {
+	text-align       : center;
+}
+
+.formularz{
+	width            : 980px;
+	background-color : #43ecd5;
+	border-radius    : 5px;
+}
+
+.header{
+	margin-top       : 50px;
+	text-align       : center;
+}
+
+#PI{
+	color            : white;
+	position         :fixed;
+	right            :5px;
+	bottom           :5px;
+	background-color : black;
+	border-radius    :5px;
+	padding          : 3px 10px 3px 10px;
+}
+
+.formularz p {
+	margin-left      : 15px;
+}
+
+#tekst{
+	margin-top       : 20px;
+	margin-left      : 15px;
+}
+#tabela{
+	border           : 1px solid #0b735b;
+	margin-left      : 5px;
+	background-color : white;
+}
+
+#tabela td{
+	border           : 1px solid #0b735b;
+	padding          : 10px;
+}
+
+#poletxt{
+	width            : 50px;
+}
+
+.container{
+	background-color : #43ecd5;
+	border-radius    : 5px;
+}
+
+.link{
+    background-color : #43ecd5;
+    border-radius    : 5px;
+}
+
+.link:hover{
+    background-color : #25907e;
+}
+
+.link a{
+  text-decoration: none;
+  color: black;
+}
+
+/* Kalendarz */
+.KALcpYearNavigation,
+.KALcpMonthNavigation
+{
+	background-color:#6677DD;
+	text-align:center;
+	text-decoration:none;
+	color:#FFFFFF;
+	font-weight:bold;
+	border: 0px;
+}
+
+.KALcpYearNavigation select,
+.KALcpMonthNavigation select
+{
+	border: 1px solid white;
+}
+
+.KALcpDayColumnHeader,
+.KALcpYearNavigation,
+.KALcpMonthNavigation,
+.KALcpCurrentMonthDate,
+.KALcpCurrentMonthDateDisabled,
+.KALcpOtherMonthDate,
+.KALcpOtherMonthDateDisabled,
+.KALcpCurrentDate,
+.KALcpCurrentDateDisabled,
+.KALcpTodayText,
+.KALcpTodayTextDisabled,
+.KALcpText
+{
+	font-family:arial;
+
+	font-size:8pt;
+	padding: 2px;
+}
+
+TD.KALcpDayColumnHeader
+{
+	padding: 5px;
+	text-align:right;
+	border:solid thin #6677DD;
+	border-width:0px 0px 1px 0px;
+}
+
+.KALcpCurrentMonthDate,
+.KALcpOtherMonthDate,
+.KALcpCurrentDate
+{
+	text-align:right;
+	text-decoration:none;
+}
+
+.KALcpCurrentMonthDateDisabled,
+.KALcpOtherMonthDateDisabled,
+.KALcpCurrentDateDisabled
+{
+	color:#D0D0D0;
+	text-align:right;
+	text-decoration:line-through;
+}
+
+.KALcpCurrentMonthDate
+{
+	color:#6677DD;
+	font-weight:bold;
+}
+
+.KALcpCurrentDate
+{
+	color: #FFFFFF;
+	font-weight:bold;
+}
+
+.KALcpOtherMonthDate
+{
+	color:#808080;
+}
+
+TD.KALcpCurrentDate
+{
+	color:#FFFFFF;
+	background-color: #6677DD;
+	border-width:1px;
+	border:solid thin #000000;
+}
+
+TD.KALcpCurrentDateDisabled
+{
+	border-width:1px;
+	border:solid thin #FFAAAA;
+}
+
+TD.KALcpTodayText,
+TD.KALcpTodayTextDisabled
+{
+	border:solid thin #6677DD;
+	border-width:1px 0px 0px 0px;
+}
+
+A.KALcpTodayText,
+SPAN.KALcpTodayTextDisabled
+{
+	height:20px;
+}
+
+A.KALcpTodayText
+{
+	color:#6677DD;
+	font-weight:bold;
+}
+
+SPAN.KALcpTodayTextDisabled
+{
+	color:#D0D0D0;
+}
+
+.KALcpBorder
+{
+	border:solid thin #6677DD;
+}
+
+.KALcpBorder table{
+width: 171px;
+}

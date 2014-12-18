@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link href="prism.css" rel="stylesheet" />
+</head>
+<body>
+	
+	<script src="prism.js"></script>
+	<pre><code class="language-php">
+	
+// Sprawdzenie czy zalogowany uzytkownik wszedl na strone formularza
+session_start();
+if(!isset($_SESSION['zalogowany'])){
+  $_SESSION['komunikat'] = "Nie jestes zalogowany!";
+  include('form.php');
+  exit();
+}
+
+// Komunikat o zalogowaniu 
+echo $_SESSION['zalogowany'] 
+
+// Skryp wywołany po wyslaniu formularza zapisujacy zmienne z tablicy $_POST do zmiennych sesyjnych
+session_start();
+		$_SESSION['imie'] = $_POST['imie'];
+		$_SESSION['nazwisko'] = $_POST['nazwisko'];
+		$_SESSION['dataud'] = $_POST['dataud'];
+		$_SESSION['pesel'] = $_POST['pesel'];
+		$_SESSION['wiek'] = $_POST['wiek'];
+		$_SESSION['plec'] = $_POST['plec'];
+		$_SESSION['kierunek'] = $_POST['kierunek'];
+		header('Location: session_data.php');
+
+	
+       
+
+
+</code></pre>
+</body>
+</html>

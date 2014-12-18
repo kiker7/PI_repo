@@ -1,0 +1,35 @@
+html, body {
+
+  background-color : black;
+  color            : black;
+  text-align       : left;
+  font-family      : Verdana;
+
+
+}
+
+div {
+  border-radius    : 20px;
+  text-align       : center;
+}
+
+h1, h3{
+  color            : white;
+}
+
+#content {
+  padding          : 10px;
+  background-color : #00ffff;
+  font-size        : 20px;
+  color            : black;
+  font-weight      : bold;
+}
+
+#footer {
+  padding          : 10px;
+}
+
+a{
+  text-decoration  : none;
+  color            : white;
+}

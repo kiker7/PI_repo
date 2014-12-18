@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link href="prism.css" rel="stylesheet" />
+</head>
+<body>
+	
+	<script src="prism.js"></script>
+	<pre><code class="language-php">
+
+// Sprawdzenie na jakim urzadzeniu zostaje wyswietlona strona 
+ $iphone = strpos($_SERVER['HTTP_USER_AGENT'],"iPhone");
+ $android = strpos($_SERVER['HTTP_USER_AGENT'],"Android");
+ $palmpre = strpos($_SERVER['HTTP_USER_AGENT'],"webOS");
+ $berry = strpos($_SERVER['HTTP_USER_AGENT'],"BlackBerry");
+ $ipod = strpos($_SERVER['HTTP_USER_AGENT'],"iPod");
+ if ($iphone || $android || $palmpre || $ipod || $berry == true)
+     header('Location: mobile.html');
+
+
+</code></pre>
+</body>
+</html>

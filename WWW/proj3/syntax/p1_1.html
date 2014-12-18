@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link href="prism.css" rel="stylesheet" />
+</head>
+<body>
+	
+	<script src="prism.js"></script>
+	<pre><code class="language-php">
+
+// Sprawdzanie czy zalogowany uzytkownik odwiedzil strone, nastepnie usuniecie zmiennej sesyjnej przypisywanej zalogowanemu uzytkownikowi	
+session_start();
+if(isset($_SESSION['zalogowany'])){
+  $komunikat = "Nie jestes zalogowany!";
+}else{
+  unset($_SESSION['zalogowany']);
+  $komunikat = "Wylogowanie prawidłowe!";
+}
+session_destroy();
+
+</code></pre>
+</body>
+</html>

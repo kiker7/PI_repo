@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link href="prism.css" rel="stylesheet" />
+</head>
+<body>
+	
+	<script src="prism.js"></script>
+	<pre><code class="language-php">
+
+// Skrypt sprawdzajacy czy zalogowany uzytkownik wszedl na strone
+session_start();
+if(!isset($_SESSION['zalogowany'])){
+  $_SESSION['komunikat'] = "Nie jestes zalogowany!";
+  include('form.php');
+  exit();
+}
+
+// Wypisanie danych z formularza
+session_start();
+          echo "Imię: <b>" . $_SESSION['imie']."</b>";
+          echo "<br />";
+          echo "Nazwisko: <b>" . $_SESSION['nazwisko']."</b>";
+          echo "<br />";
+          echo "Data urodzenia: <b>" . $_SESSION['dataud']."</b>";
+          echo "<br />";
+          echo "PESEL: <b>" . $_SESSION['pesel']."</b>";
+          echo "<br />";
+          echo "Wiek: <b>" . $_SESSION['wiek']."</b>";
+          echo "<br />";
+          echo "Płeć: <b>" . $_SESSION['plec']."</b>";
+          echo "<br />";
+          echo "Kierunek: <b>" . $_SESSION['kierunek']."<
+
+
+</code></pre>
+</body>
+</html>

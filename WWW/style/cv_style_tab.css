@@ -1,0 +1,65 @@
+﻿html, body {
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 100% 100%;
+	background-color: white;
+	color: black;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font-family: Verdana;
+	width: 1000px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+#top {
+	margin: 0px 10px ;
+	border: 1px solid black;
+	background-color: #fcfacc;
+	padding: 0 15px 0 15px;
+	width: 980px;
+}
+
+#top h3 {
+	margin-bottom: auto;
+	font-size: 23px;
+}
+
+#top p{
+	margin-left: 30px;
+}
+
+.tytul {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.wiersz {
+	font-size: 14px;
+	margin-left: 40px;
+	font-family:"Times New Roman", Times, serif;
+	color: #000000;
+}
+
+.kolumna{
+	width: 20em;
+	display: inline-block;
+}
+
+.rubryka {
+	padding: 0px 20px;
+
+}
+
+.tytul_rubryki {
+	color: #262624;
+	font-size:20px;
+	font-weight: bold;
+	text-decoration: underline;
+	font-style: italic;
+	margin-bottom: 5px;
+}
